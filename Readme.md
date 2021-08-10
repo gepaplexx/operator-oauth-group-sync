@@ -20,3 +20,7 @@ Every user from the `test1` and `test2` identity provider, will be able to log i
 
 The operator recognizes the user creation, and will add the user to the appropriate group. For example: If the user uses the `test1` identity provider, the user will be added to the `test1` group.  
 
+## Installation
+```bash
+helm upgrade --install -n gp-group-sync --create-namespace sync-operator ./chart
+```
