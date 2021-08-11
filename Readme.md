@@ -22,5 +22,6 @@ The operator recognizes the user creation, and will add the user to the appropri
 
 ## Installation
 ```bash
-helm upgrade --install -n gp-group-sync --create-namespace sync-operator ./chart
+helm repo add gp-helm-charts https://gepaplexx.github.io/gp-helm-charts/
+helm upgrade --install -n gp-group-sync --create-namespace sync-operator gp-helm-charts/oauth-group-sync-operator
 ```
