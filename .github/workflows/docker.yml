@@ -90,13 +90,3 @@ jobs:
       run: |
         rm -rf /tmp/.buildx-cache
         mv /tmp/.buildx-cache-new /tmp/.buildx-cache
-
-    - name: Publish Helm charts
-      uses: stefanprodan/helm-gh-pages@master
-      with:
-        token: ${{ secrets.GP_HELM_REPO }}
-        charts_dir: .
-        charts_url: https://gepaplexx.github.io/gp-helm-charts/
-        owner: gepaplexx
-        repository: gp-helm-charts
-        branch: main
